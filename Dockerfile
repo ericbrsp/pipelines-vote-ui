@@ -1,5 +1,5 @@
 # Using official python runtime base image
-FROM registry.redhat.io/ubi8/python-311
+FROM python:3.9-slim
 
 # Install our requirements.txt
 ADD requirements.txt /opt/app-root/src/requirements.txt

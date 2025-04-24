@@ -1,5 +1,5 @@
 # Using official python runtime base image
-FROM python:3.9-slim
+FROM registry.access.redhat.com/ubi8/python-39
 
 RUN pip install --no-cache-dir simplejson
 

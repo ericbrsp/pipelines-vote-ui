@@ -2,8 +2,8 @@
 FROM python:3.9-slim
 
 # Install our requirements.txt
-ADD requirements.txt /opt/app-root/src/requirements.txt
-RUN pip install -r requirements.txt
+ADD requirements.txt /requirements.txt  # Coloque na raiz do container
+RUN pip install -r /requirements.txt  # Atualize o caminho
 
 # Copy our code from the current folder to /app inside the container
 ADD . /opt/app-root/src
